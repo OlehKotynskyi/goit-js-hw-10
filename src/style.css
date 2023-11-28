@@ -1,0 +1,92 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+}
+
+p:last-child {
+   margin-bottom: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+a {
+   color: currentColor;
+   text-decoration: none;
+}
+
+button {
+   font-family: inherit;
+   cursor: pointer;
+   border: none;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+body {
+   background-color: grey;
+}
+
+.is-hidden {
+   overflow: hidden;
+   position: absolute;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   width: 1px;
+   height: 1px;
+   margin: -1;
+}
+
+.loader {
+   font-size: 48px;
+   font-weight: 600;
+   display: inline-block;
+   letter-spacing: 2px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #FFF;
+   box-sizing: border-box;
+   animation: spotlight 2s linear infinite alternate;
+}
+
+@keyframes spotlight {
+
+   0%,
+   20% {
+      opacity: 1;
+      letter-spacing: 2px;
+   }
+
+   80%,
+   100% {
+      opacity: 0;
+      letter-spacing: 32px;
+   }
+}
+
+.breed-select {
+   max-width: 300px;
+   margin-bottom: 30px;
+}
+
+.cat-info {
+   max-width: 600px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
